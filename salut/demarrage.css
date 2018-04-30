@@ -2,6 +2,15 @@ html, body, h1, form, fieldset, input
 {
 margin: 0; padding: 0; border: none;
 }
+
+
+
+navbar
+{
+ 	background: darkcyan;   
+    
+}
+
 body {
 font-family: Helvetica, Arial, sans-serif; font-size: 12px;
 }
@@ -9,7 +18,7 @@ font-family: Helvetica, Arial, sans-serif; font-size: 12px;
 
 #registration {
 	color: #fff;
-	background: #2d2d2d;
+	background: darkcyan;
 	
 	 -moz-border-radius: 10px;
 	 -webkit-border-radius: 10px;
