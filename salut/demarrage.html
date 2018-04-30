@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="demarrage.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Linktamere</a>
+    </div>
+    
+      
+    <ul class="nav navbar-nav navbar-right">
+
+  <form class="form-inline" action="/action_page.php" align= "right" >
+    <div class="form-group" align= "right">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <button type="submit" class="btn btn-default">Connexion</button>
+      <div class="checkbox">
+        
+    </div>
+    
+  </form>  
+      
+      </ul>
+  </div>
+</nav>
+    
+  
+
+
+    <div id="registration">
+<h2>S'incrire maintenant</h2>
+<form id="RegisterUserForm" action="" method="post">
+     <tr><td><label>Nom </label></td>
+             <td><input type="text" id="nom"></td></tr>
+      
+         <tr><td><label>Prénom </label></td>
+             <td><input type="text" id="prenom"></td></tr>
+      
+        <tr><td><label>Sexe</label></td>
+        <td><input type="radio" name="Genre" value="Homme" id="Homme"> Homme
+     
+        <input type="radio" name="Genre" value="Femme" id="Femme"> Femme</td></tr>
+     
+            <tr><td><label>Date de naissance</label></td>
+             <td><input type="date" id="date"></td></tr>
+        
+            <tr><td><label>Mail </label></td>
+             <td><input type="text" id="Mail"></td></tr>
+      
+            <tr><td><label>Télephone</label></td>
+             <td><input type="text" id="telephone"></td></tr>
+            
+            <tr><td></td><td> <input type="button" value="S'incrire maintenant" onclick="validation()"></td></tr>
+            
+        
+</form></div>
+    
+   
+    
+
+
+</body>
+</html>
