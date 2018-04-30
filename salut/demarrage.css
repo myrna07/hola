@@ -5,26 +5,47 @@ margin: 0; padding: 0; border: none;
 
 
 
-navbar
+#navbar
 {
- 	background: darkcyan;   
+ 	background: darkcyan;
+    
+    
     
 }
 
 body {
-font-family: Helvetica, Arial, sans-serif; font-size: 12px;
+font-family: Helvetica, Arial, sans-serif; font-size: 14px;
+    background-image: url("lien.png") no-repeat ;
 }
 
 
 #registration {
+    
 	color: #fff;
 	background: darkcyan;
-	
+	font-size: 18px;
 	 -moz-border-radius: 10px;
 	 -webkit-border-radius: 10px;
 	 border-radius: 10px;
-	 margin: 10px;
+	 margin: 100px;
 	 width: 430px;
+    margin : auto;
+    
+    
 	 }
+
+#footer { 
+    font-size: .60em;
+    color: white;
+          font-style: italic;
+        text-align: center;
+     background-color: darkcyan;
+        
+}
+
+
+
  
+
+
  
