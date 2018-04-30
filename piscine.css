@@ -1,0 +1,61 @@
+
+#header
+{
+    display: block;
+   background-color : darkred; 
+    Height :50px;
+    width: :100px;
+}
+
+body
+{
+	background-color : darkgray;
+    
+background-size: cover;
+
+}
+
+
+
+#inscription
+{
+  text-align: center;   
+   background-color: lightblue;
+      color:hotpink;
+    
+}
+
+#tabinscription
+{
+    
+     text-align: center;
+    color :whitesmoke;
+    
+}
+
+
+#hauteur{ 
+  height: 40px;
+  text-align: right;    
+}
+
+#tabhauteur
+{
+    text-align: right;
+    color :red;   
+}
+
+#1
+{
+  color : green; 
+    
+}
+
+
+#footer { 
+    font-size: .60em;
+          font-style: italic;
+        text-align: center;
+    background-color: whitesmoke;
+        
+}
