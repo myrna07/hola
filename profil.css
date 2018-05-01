@@ -72,3 +72,12 @@ body
       width:100px;
   
 }
+#submit1{
+top : 10px;
+left : 1500px;
+height:40px;
+color : white;
+background: darkred;
+font-size : 20px;
+width:100px;
+}
