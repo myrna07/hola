@@ -4,11 +4,11 @@
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
 define ('DB_PASS','');
-$base  = 'netpro'; 
+$base  = 'linkedin'; 
 
 //Récupération des id 
-$pseudo=isset($_POST["pseudo"])?$_POST["pseudo"]:"";
-$mdp=isset($_POST["mdp"])?$_POST["mdp"]:"";
+$name=isset($_POST["name"])?$_POST["name"]:"";
+$password=isset($_POST["password"])?$_POST["password"]:"";
 
 
   // CONNEXION
@@ -18,12 +18,12 @@ $mdp=isset($_POST["mdp"])?$_POST["mdp"]:"";
 
      
   // VERIFICATION QUE LE PSEUDO ET MDP EXISTENT 
-$sql  = "SELECT * FROM personne WHERE Pseudo = '".$pseudo."' AND Mdp = '".$mdp."'";
+$sql  = "SELECT * FROM personne WHERE mail = '".$name."' AND mdp = '".$password."'";
     $res  = mysqli_query($db_handle, $sql); //execution de la requete
     
     //ON TEST SI LES CHAMPS EXISTENT      
   if(mysqli_num_rows($res) != 0) {
-	echo "Connexion reussie.";
+	header("Location: accueil.html");
 } else {
 	echo "Le pseudo ou le mot de passe est incorrect.";
 }
