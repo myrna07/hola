@@ -72,3 +72,63 @@ body
       width:100px;
   
 }
+#submit1{
+top : 10px;
+left : 1500px;
+height:40px;
+color : white;
+background: darkred;
+font-size : 20px;
+width:100px;
+}
+
+.couv{
+left : 600px;
+top: 60px;
+height : 360px;
+width: 850px;
+position : absolute;
+-webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.droite{
+left : 600px;
+top: 60px;
+height : 360px;
+width: 850px;
+position : absolute;
+display: none;
+}
+
+.header2{
+left : 0px;
+top: 0px;
+background: red;
+height : 60px;
+width: 100%;
+position : fixed;
+z-index : 6;
+-webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.profil{
+     width: 140px;
+    top : 430px;
+    height : 140px;
+    left : 960px;
+    padding : 5px;
+    position: absolute;
+    border-radius: 2px/2px;
+   background :white;
+}
+
+.profilpic{
+    width: 140px;
+    top : 430px;
+    height : 140px;
+    left : 960px;
+    padding : 5px;
+    position: absolute;
+    border-radius: 2px/2px;
+     -webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
+}
