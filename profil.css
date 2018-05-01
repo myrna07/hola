@@ -40,6 +40,7 @@ body
    left : 800px;
     height : 40px;
     color : white;
+    width:100px;
 
     
 }
@@ -49,7 +50,8 @@ body
    left : 1000px;
     height : 40px;
    color : white;
-    
+        width:100px;
+
 }
 
 
@@ -57,14 +59,16 @@ body
     top: 10px;
    left : 1200px;
     height : 40px;
-   color : blue;
-    
+   color : white;
+       width:100px;
+ 
 }
 #Moi{
     
     top : 10px;
-   left : 1600px;
+   left : 1400px;
     height : 40px;
    color : white;
-    
+      width:100px;
+  
 }
