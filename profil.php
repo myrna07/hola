@@ -22,7 +22,7 @@ Node in
     <div class = "couv"><img src ="loli.png" width ="850px"/></div>
     
       <div class = "profil"></div>
-     <div class = "profilpic"><img src ="profil2.png" height ="140px"/></div>
+     <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
    
 </body>
 
