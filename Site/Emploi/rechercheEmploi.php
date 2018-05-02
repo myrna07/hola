@@ -1,9 +1,9 @@
-<?php
+	<?php
 
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','root');
+define ('DB_PASS','');
 $base  = 'linkedin'; 
 
   // CONNEXION
@@ -25,7 +25,7 @@ $base  = 'linkedin';
  
  <div class = "header1" > 
      <ul>
-     <li><a href="#" id="Accueil" class="header1">Accueil</a></li>
+      <li><a href="#"id="Accueil" class="header1">Accueil</a></li>
 	  <li><a href="#" id="Reseau" class="header1">Reseau</a></li>
 	  <li><a href="#"id="Notifications" class="header1">Notifications</a></li>
 	  <li><a href="#"id="Emplois" class="header1">Emplois</a></li>
@@ -38,10 +38,18 @@ $base  = 'linkedin';
     
    </div>
 
+   
+   
+  
+
+   
+   
+   
 
 <div class="bodyx">
    
-
+ 
+   
 <div id="form3" class="bodyx">
     <table>
         
@@ -63,7 +71,7 @@ $base  = 'linkedin';
 		 <input type="submit" id="button3" value="Postuler"/> 
 		 
 		 <?php
-		echo "______________________________________________________________________________".'<br>';
+		echo "_______________________________________________________".'<br>';
 	}
 
     
