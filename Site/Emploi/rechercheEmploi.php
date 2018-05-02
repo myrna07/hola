@@ -21,19 +21,26 @@ $base  = 'linkedin';
 <link type="text/css" rel="stylesheet" href="rechercheEmploi.css" />
 
 </head>
-<body style="height:815px">
+<body>
+ 
+ <div class = "header1" > 
+     <ul>
+     <li><a href="#" id="Accueil" class="header1">Accueil</a></li>
+	  <li><a href="#" id="Reseau" class="header1">Reseau</a></li>
+	  <li><a href="#"id="Notifications" class="header1">Notifications</a></li>
+	  <li><a href="#"id="Emplois" class="header1">Emplois</a></li>
+      <li><a href="#"id="Messages" class="header1">Messages</a></li>
+      <li><a href="#"id="Moi" class="header1">Moi</a></li>  
+         
+    <a href="Site.html"><img src="deco.png" id="img1" /></a>
 
-<div class="headerx">
-</div>
-
-<div class="header">
-
-</div>
+   </ul>
+    
+   </div>
 
 
 <div class="bodyx">
    
-<div id="img2" class="bodyx"><img src="fond2.png"/></div>
 
 <div id="form3" class="bodyx">
     <table>
@@ -51,6 +58,11 @@ $base  = 'linkedin';
 		echo "Societe: ".$data['societe'].' <br>';
 		echo "Domaine: ".$data['domaine'].'<br> ';
 		echo "Description: ".$data['description'].'<br>';
+		
+		?>
+		 <input type="submit" id="button3" value="Postuler"/> 
+		 
+		 <?php
 		echo "______________________________________________________________________________".'<br>';
 	}
 

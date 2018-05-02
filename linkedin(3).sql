@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 02 Mai 2018 à 10:15
+-- Généré le :  Mer 02 Mai 2018 à 12:18
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -30,6 +30,19 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `numero` int(11) NOT NULL,
   `code` int(11) NOT NULL,
   PRIMARY KEY (`numero`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `amis`
+--
+
+CREATE TABLE IF NOT EXISTS `amis` (
+  `utilisateur` int(11) NOT NULL,
+  `ami` int(11) NOT NULL,
+  PRIMARY KEY (`utilisateur`,`ami`),
+  KEY `personne_ami` (`ami`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -115,6 +128,13 @@ INSERT INTO `utilisateur` (`numero`, `pays`, `photo`, `domaine`) VALUES
 --
 ALTER TABLE `admin`
   ADD CONSTRAINT `utilisateur_admin` FOREIGN KEY (`numero`) REFERENCES `utilisateur` (`numero`);
+
+--
+-- Contraintes pour la table `amis`
+--
+ALTER TABLE `amis`
+  ADD CONSTRAINT `personne_ami` FOREIGN KEY (`ami`) REFERENCES `personne` (`numero`),
+  ADD CONSTRAINT `personne_user` FOREIGN KEY (`utilisateur`) REFERENCES `personne` (`numero`);
 
 --
 -- Contraintes pour la table `personne`
