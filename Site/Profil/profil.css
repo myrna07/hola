@@ -174,3 +174,62 @@ z-index : 6;
     border-radius: 2px/2px;
      -webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
 }
+
+.bodyx{
+position:absolute;
+left:600;
+top:600px;
+width:40%;
+height:4000px;
+background-color:gainsboro;
+
+}
+
+#img2{
+   
+height : 40px;
+position: relative;
+left: 1380px;
+top: 615px;
+
+
+}
+#img3{
+   
+height : 40px;
+position: relative;
+left: 1100px;
+top: 425px;
+
+}
+
+#img4{
+   
+height : 90px;
+position: relative;
+left: 600px;
+top:4900px;
+
+}
+.form3{
+top:50px;
+left:400px;
+font-family:verdana;
+font-size:30px;
+color:white;
+text-align : center;
+width:40%;
+height:3500px;
+ background-color: darkred;
+    
+}
+
+
+#box{
+width:700px;
+height:3700px;
+background:white;
+
+font-size:12px;
+ 
+}
