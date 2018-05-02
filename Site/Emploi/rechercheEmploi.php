@@ -51,6 +51,7 @@ $base  = 'linkedin';
 		echo "Societe: ".$data['societe'].' <br>';
 		echo "Domaine: ".$data['domaine'].'<br> ';
 		echo "Description: ".$data['description'].'<br>';
+		echo "______________________________________________________________________________".'<br>';
 	}
 
     
