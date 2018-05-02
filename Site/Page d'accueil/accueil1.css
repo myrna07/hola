@@ -2,6 +2,7 @@ body
 {
     background: linear-gradient (to bottom right, white, black);
     height : 4000px;
+    
 }
 
 .header1 
@@ -102,6 +103,15 @@ body
       width:100px;
   
 }
+.menu{
+position:absolute;
+top:100px;
+width:100%;
+height:6045px;
+background-color:gainsboro;
+
+}
+
 
 #img1{
      
@@ -131,14 +141,16 @@ height:50px;}
 #postbox{height:100px;
 outline:none;
 border:white;
+    font-size:20px;
 background:white;
 
-width:690px;}
+width:680px;}
 
 #postboxpos{top:0px;
 left :0px;
 height:100px;
-width:690px;}
+    font-size:15px;
+width:680px;}
 
 #postboxpos2{top:100px;
 left :0px;
@@ -187,11 +199,66 @@ width:150px
 
 #img2{
     
-left:100px;
+left:-900px;
 height:150px;
-width:110px;
+width:150px;
 top:1px;}
     
+#imgp1{
+     
+   
+    height : 270px;
+    width:230px;
+    position: relative;
+   left: 1100px;
+   top: -250px;
+
+    
+}
+
+
+
+#imgp2{
+     
+   
+    height : 270px;
+    width:230px;
+    position: relative;
+   left: 1100px;
+   top: -220px;
+
+    
+}
+
+#imgp3{
+    height : 270px;
+    width:230px;
+    position: relative;
+   left: 1100px;
+   top: -190px;
+
+    
+}
+
+#imgp4{
+    height : 270px;
+    width:230px;
+    position: relative;
+   left: 1100px;
+   top: -160px;
+
+    
+}
+
+#imgp5{
+    height : 270px;
+    width:230px;
+    position: relative;
+   left: 1100px;
+   top: -130px;
+
+    
+}
 
 
 #buttonpost{width:85px;
@@ -250,14 +317,6 @@ border-radius:3px/3px;
 padding-left:10px;
 padding-right:10px;
 padding-top:10px;
-}
-.menu{
-position:absolute;
-top:100px;
-width:100%;
-height:645px;
-background-color:gainsboro;
-
 }
 
 #form3{top:100px;

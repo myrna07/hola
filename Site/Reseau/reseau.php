@@ -1,9 +1,9 @@
-	<?php
+<?php
 
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','');
+define ('DB_PASS','root');
 $base  = 'linkedin'; 
 
   // CONNEXION
@@ -15,17 +15,19 @@ $base  = 'linkedin';
 
 
 
-<html>
-<title>NodeIn</title>
-<head>
-<link type="text/css" rel="stylesheet" href="rechercheEmploi.css" />
 
-</head>
-<body>
+<html>
+<head>
+  <title> Accueil </title>
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="reseau.css">
  
+    </head>
+<body>
+    
  <div class = "header1" > 
      <ul>
-      <li><a href="#"id="Accueil" class="header1">Accueil</a></li>
+     <li><a href="#" id="Accueil" class="header1">Accueil</a></li>
 	  <li><a href="#" id="Reseau" class="header1">Reseau</a></li>
 	  <li><a href="#"id="Notifications" class="header1">Notifications</a></li>
 	  <li><a href="#"id="Emplois" class="header1">Emplois</a></li>
@@ -36,43 +38,35 @@ $base  = 'linkedin';
 
    </ul>
     
-   </div>
+     
+      
+          
+          <div class="bodyx">
+   <div class=droite>
+    <h1>MON RESEAU</h1>
+     </div>
 
-   
-   
-  
-
-   
-   
-   
-
-<div class="bodyx">
-   
- 
-   
 <div id="form3" class="bodyx">
-    <table>
-        
-	<?php
+    
+    
+<div id="searchbar">
+    
+                <form action="" class="form3">
+               <input class="champ" type="text" value="Rechercher..."/>
+                    <input class="bouton" type="button" value=" " />
+                     
+                </form>
+                </div>
+     <?php
 
   if ($db_found) {
 	
-	$sql = "SELECT * FROM emploi";
+	$sql = "SELECT nom * FROM personne";
 	$result = mysqli_query($db_handle, $sql);
 	
 	while ($data = mysqli_fetch_assoc($result)){
-		echo "Titre: ".$data['titre'].'<br>'; 
-		echo "Categorie: ".$data['categorie'].'<br> ';
-		echo "Societe: ".$data['societe'].' <br>';
-		echo "Domaine: ".$data['domaine'].'<br> ';
-		echo "Description: ".$data['description'].'<br>';
-		
-		?>
-		 <input type="submit" id="button3" value="Postuler"/> 
-		 
-		 <?php
-		echo "_______________________________________________________".'<br>';
-	}
+		echo "Utilisateur: ".$data['ami'].'<br>'; 
+		}
 
     
 
@@ -80,23 +74,12 @@ $base  = 'linkedin';
 else { 
 	echo "Database not found"; 
 }   
-  
-?>
-
-    </table>    
-     </div>
+     
+          ?> </div>  </div>    
+     
+     
+   </div>
     
-<br><hr>
-
-
-        </div>
-		
-
-		
-		
-		
-		
-<div class="body1">
-<div id="conclu1" class="body1">English UK....<br><hr>Leran more......</div></div>
+    
 </body>
 </html>
