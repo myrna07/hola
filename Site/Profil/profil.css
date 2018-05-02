@@ -4,7 +4,7 @@ body
     height : 4000px;
 }
 
-.header1
+.header1 
 {
     position : fixed;
     width: 100%;
@@ -12,32 +12,62 @@ body
     background : darkred;
     top :0 ;
     left : 0;
-    color : white;
+    color : darkred;
     z-index : 7;
 }
+.header1 ul li  {
+	display: inline;
+       
+}
+.header1 ul li a {
+	background-color: darkgrey;
+	text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    line-height:35px; 
+	padding: 1px 15px;
+}
 
-#accueil{
+.header ul {
+	display: center;
+    margin : 300px;
+
+}
+
+.header1 li a:hover {
+	background-color: grey;
+	text-decoration: none;
+    font-weight: bold;
+	color: grey;
+    line-height:35px; 
+	padding: 1px 15px;
+    
+}
+
+
+
+#Accueil{
     top : 10px;
     width:100px;
-   left : 400px;
+   left : 200px;
     height : 40px;
     color : white;
-
     font-family:  white;
     
 }
 #Reseau{
     top : 10px;
     width:100px;
-   left :600px;
+   left :350px;
     height : 40px;
     color : white;
 
     
 }
-#Notifs{
+#Notifications{
     top : 10px;
-   left : 800px;
+   left : 500px;
     height : 40px;
     color : white;
     width:100px;
@@ -47,7 +77,7 @@ body
 
 #Messages{
     top : 10px;
-   left : 1000px;
+   left : 650px;
     height : 40px;
    color : white;
         width:100px;
@@ -57,7 +87,7 @@ body
 
 #Emplois{
     top: 10px;
-   left : 1200px;
+   left : 800px;
     height : 40px;
    color : white;
        width:100px;
@@ -66,15 +96,27 @@ body
 #Moi{
     
     top : 10px;
-   left : 1400px;
+   left : 950px;
     height : 40px;
    color : white;
       width:100px;
   
 }
+
+#img1{
+     
+   
+    height : 40px;
+    position: relative;
+   left: 1305px;
+   top: 1px;
+
+    
+    
+}
 #submit1{
 top : 10px;
-left : 1500px;
+left : 1300px;
 height:40px;
 color : white;
 background: darkred;
