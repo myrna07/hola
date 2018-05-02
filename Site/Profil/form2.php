@@ -4,8 +4,7 @@ Node in
 </title>
 <head>
 <link type="text/css" rel="stylesheet" href="profil.css" />
-    </head>
-<body >
+    <body >
 
  <div class = "header1" > 
      <ul>
@@ -30,12 +29,31 @@ Node in
     
     <div class="bodyx"></div>
     <a href="form.php"><img src="modif.jpg" id="img2" /></a>
-    <a href="form2.html"><img src="modif.jpg" id="img3" /></a>
+    <a href="form2.php"><img src="modif.jpg" id="img3" /></a>
 
     
 </body>
+ <form method="post" action= "form2bis.php">
+<div id="form3" class="bodyx">
+    <table>
+        
+    <label>Description du profil</label>
+    <tr> <td> <p>  </p>  </td>      </tr>
+    <tr> <td> <p>  </p>  </td>      </tr>
+    <tr><td><label>Description</label></td>
+    <td><textarea type="text" id="box" name="description" ></textarea></td></tr>
+         <a href="form2bis.php"><img src="save.png" id="img4" /></a>  
+    </table>
+      
+   
 
-</html>       
+        </div>
+    </form>
+
+</head>
+</html>
+
+
+
+
  
-    
-    
