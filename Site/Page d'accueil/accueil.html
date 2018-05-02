@@ -13,7 +13,13 @@
      <li><a href="#" id="Accueil" class="header">Accueil</a></li>
 	  <li><a href="#" id="Reseau" class="header">Reseau</a></li>
 	  <li><a href="#"id="Notifications" class="header">Notifications</a></li>
-	  <li><a href="#"id="Emplois" class="header">Emplois</a></li>
+	  <li><a href="#"id="Emplois" class="header">Emplois</a>
+        <ul class="sousemploi">
+             <li><a href="#"id="Rechercher" class="sousemploi">Rechercher un emploi</a></li>
+             <li><a href="#"id="Proposer" class="sousemploi">Proposer un emploi</a></li>
+         
+         </ul> 
+       </li> 
       <li><a href="#"id="Messages" class="header">Messages</a></li>
       <li><a href="#"id="Moi" class="header">Moi</a></li>  
          
@@ -47,9 +53,15 @@
 
 
 <div id="postboxpos" class="post"><textarea placeholder="Exprimez vous ...... !" id="postbox" type="text"></textarea></div>
+
+<form method="post" action="sql_editer.php" enctype="multipart/form-data">
+   <div id="postboxpos3" class="post"><input type="submit" id="texte" value="Photo"/>
+     <input type="file" name="pdp" id="texte" /><br /></div>
+     <br />
+        </form>
+
 <div id="postpos" class="post"><input type="submit" id="texte1" value="Partager"/></div>
 <div id="postboxpos2" class="post"><input type="submit" id="texte" value="Texte"/></div>
-<div href="file:../dossier/sousdossier"id="postboxpos3" class="post"><input type="submit" id="texte" value="Photo"/></div>
 <div id="postboxpos4" class="post"><input type="submit" id="texte" value="Video"/></div>
 </div>
   

@@ -19,6 +19,7 @@ $base  = 'linkedin';
 <title>NodeIn</title>
 <head>
 <link type="text/css" rel="stylesheet" href="rechercheEmploi.css" />
+ 
 
 </head>
 <body>
@@ -58,11 +59,28 @@ $base  = 'linkedin';
 		echo "Societe: ".$data['societe'].' <br>';
 		echo "Domaine: ".$data['domaine'].'<br> ';
 		echo "Description: ".$data['description'].'<br>';
+		echo "Lieu: ".$data['pays'].'<br>';
 		
 		?>
-		 <input type="submit" id="button3" value="Postuler"/> 
-		 
-		 <?php
+        <form method="post" action="sql_editer.php" enctype="multipart/form-data">
+   <input type="file" name="pdp" id="texte" /><br />
+     <br /> 
+        </form>
+        
+          <script>
+     function change()
+            {
+    var color = document.getElementById('couleur');
+    var color.style.backgroundColor="green";
+    }
+        </script>
+
+		 <input type="submit" id="button3" value="Postuler" onclick="change()"/> 
+        
+      
+		
+        
+        <?php
 		echo "______________________________________________________________________________".'<br>';
 	}
 
