@@ -39,12 +39,29 @@ $base  = 'linkedin';
    </ul>
     
      
-     
+      
+          
+          <div class="bodyx">
+   <div class=droite>
+    <h1>MON RESEAU</h1>
+     </div>
+
+<div id="form3" class="bodyx">
+    
+    
+<div id="searchbar">
+    
+                <form action="" class="form3">
+               <input class="champ" type="text" value="Rechercher..."/>
+                    <input class="bouton" type="button" value=" " />
+                     
+                </form>
+                </div>
      <?php
 
   if ($db_found) {
 	
-	$sql = "SELECT * FROM amis";
+	$sql = "SELECT nom * FROM personne";
 	$result = mysqli_query($db_handle, $sql);
 	
 	while ($data = mysqli_fetch_assoc($result)){
@@ -58,7 +75,7 @@ else {
 	echo "Database not found"; 
 }   
      
-?>     
+          ?> </div>  </div>    
      
      
    </div>
