@@ -23,7 +23,7 @@ $sql  = "SELECT * FROM personne WHERE mail = '".$name."' AND mdp = '".$password.
     
     //ON TEST SI LES CHAMPS EXISTENT      
   if(mysqli_num_rows($res) != 0) {
-	header("Location:/hola/Site/Accueil/accueil.html l");
+	header("Location:/hola/Site/Accueil/accueil.html");
 } else {
 	echo "Le pseudo ou le mot de passe est incorrect.";
 }
