@@ -29,7 +29,9 @@ Node in
     <div class = "couv"><img src ="loli.png" width ="850px"/></div>
     <div class = "profil"></div>
     <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
-    <div class="bodyx" ><?php
+    <div class="bodyx" >
+
+<?php
 
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
@@ -62,13 +64,7 @@ while (	$donn=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
     
 }
       
- /*     
-      echo '
-        <div class ="jpp" text = center>
-        $donn["pays"]     ; 
-      '*/
-    // on affiche le résultat pour le visiteur 
-//header("Location: ok.html");
+ 
 
   }
 else { 
