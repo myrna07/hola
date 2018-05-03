@@ -4,13 +4,16 @@
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
 define ('DB_PASS','');
-$base  = 'linkedin'; 
+$base  = 'linkedin2'; 
 
 
 
 //Récupération des id 
 
-$description=isset($_POST["description"])?$_POST["description"]:"";
+$description=isset($_POST["description_profil"])?$_POST["description_profil"]:"";
+$education=isset($_POST["education"])?$_POST["education"]:"";
+$competences=isset($_POST["competences"])?$_POST["competences"]:"";
+$langue=isset($_POST["langue"])?$_POST["langue"]:"";
 
 
 
@@ -21,7 +24,7 @@ $description=isset($_POST["description"])?$_POST["description"]:"";
 
   if ($db_found) {
 	
-	$sql = "UPDATE utilisateur SET description = '$description' WHERE numero='2'"; 
+	$sql = "UPDATE utilisateur SET description = '$description',education = '$education', competences ='$competences',langue = '$langue' WHERE numero='2'"; 
 	$result = mysqli_query($db_handle, $sql);
 	
 	
