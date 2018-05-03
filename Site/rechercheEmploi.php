@@ -19,14 +19,13 @@ $base  = 'linkedin';
 <title>NodeIn</title>
 <head>
 <link type="text/css" rel="stylesheet" href="rechercheEmploi.css" />
- 
 
 </head>
 <body>
  
  <div class = "header1" > 
      <ul>
-      <li><a href="#"id="Accueil" class="header1">Accueil</a></li>
+     <li><a href="#" id="Accueil" class="header1">Accueil</a></li>
 	  <li><a href="#" id="Reseau" class="header1">Reseau</a></li>
 	  <li><a href="#"id="Notifications" class="header1">Notifications</a></li>
 	  <li><a href="#"id="Emplois" class="header1">Emplois</a></li>
@@ -39,18 +38,10 @@ $base  = 'linkedin';
     
    </div>
 
-   
-   
-  
-
-   
-   
-   
 
 <div class="bodyx">
    
- 
-   
+
 <div id="form3" class="bodyx">
     <table>
         
@@ -67,9 +58,9 @@ $base  = 'linkedin';
 		echo "Societe: ".$data['societe'].' <br>';
 		echo "Domaine: ".$data['domaine'].'<br> ';
 		echo "Description: ".$data['description'].'<br>';
-		echo "Lieu: ".$data['pays'].'<br>';
 		
 		?>
+<<<<<<< HEAD:Site/rechercheEmploi.php
 
         <form method="post" action="sql_editer.php" enctype="multipart/form-data">
    <input type="file" name="pdp" id="texte" /><br />
@@ -81,18 +72,29 @@ $base  = 'linkedin';
 		 <input type="submit" id="button3" value="Postuler" /> 
         
       
+=======
+>>>>>>> e350d1d2e9ea3f8ebef5f4dafcd49e98884b65cd:Site/Emploi/rechercheEmploi.php
 		
-        
-        <?php
+		
+		<img src="postuler1.jpg" onclick="this.src='postuler2.jpg'">
+		
+
+
+		<?php 
+		
 		echo "______________________________________________________________________________".'<br>';
+<<<<<<< HEAD:Site/rechercheEmploi.php
 		 <input type="submit" id="button3" value="Postuler"/> 
 		 
 		 <?php
 		echo "_______________________________________________________".'<br>';
 
+=======
+>>>>>>> e350d1d2e9ea3f8ebef5f4dafcd49e98884b65cd:Site/Emploi/rechercheEmploi.php
 	}
 
-    
+    		
+
 
   }
 else { 

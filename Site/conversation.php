@@ -3,7 +3,7 @@
 Node in 
 </title>
 <head>
-    <link type="text/css" rel="stylesheet" href="profil.css" />
+    <link type="text/css" rel="stylesheet" href="profil2.css" />
     
 
     
@@ -24,18 +24,16 @@ Node in
     <a href="Site.html"><img src="deco.png" id="img1" /></a>
    </ul>
    </div>
-    <div class = "header2"></div>
-    <div class = "droite"></div>
-    <div class = "couv"><img src ="loli.png" width ="850px"/></div>
-    <div class = "profil"></div>
-    <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
-    <div class="bodyx" ><?php
-
+    <form method="post" action="envoyer.php" >
+<div id="form4" class="bodyxx" >
+ 
+        
+<?php
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
 define ('DB_PASS','');
-$base  = 'linkedin2'; 
+$base  = 'linkedin4'; 
 
 
 
@@ -43,32 +41,28 @@ $base  = 'linkedin2';
   // CONNEXION
  $db_handle = mysqli_connect(DB_SERVER,DB_USER,DB_PASS) or die(error); //Connexion
  
- $db_found = mysqli_select_db($db_handle, $base)or die(error2);
+ $db_found = mysqli_select_db($db_handle, $base)or die(error2); 
 
   if ($db_found) {
 	
-	$sql = "SELECT * FROM utilisateur WHERE numero='2'"; 
+	$sql = "SELECT sms,nom FROM messages,personne WHERE messages.user1=personne.numero AND user1='1' AND user2='2' ORDER BY datheure DESC"; 
 	$result = mysqli_query($db_handle, $sql);
 	
 	//$donn=mysqli_fetch_array($result,MYSQLI_ASSOC);
-while (	$donn=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+while (	$donn=mysqli_fetch_assoc($result)) {
 	// on affiche les résultats
- 
-	echo 'Education : '.$donn['education'].'<br />';
+ echo 'Messages : '.$donn['sms'].'<br />';
+    echo 'Nom : '.$donn['nom'].'<br />';
+/*echo 'Education : '.$donn['education'].'<br />';
     echo  'Langues : ' .$donn['langue'].'<br />';
        echo  'Competences : ' .$donn['competences'].'<br />';
-        echo  'Description : ' .$donn['description'].'<br />';
+        echo  'Description : ' .$donn['description'].'<br />';*/
      
+    
+
     
 }
       
- /*     
-      echo '
-        <div class ="jpp" text = center>
-        $donn["pays"]     ; 
-      '*/
-    // on affiche le résultat pour le visiteur 
-//header("Location: ok.html");
 
   }
 else { 
@@ -76,12 +70,12 @@ else {
 }   
   
 ?>
-    </div>
-  
-    <a href="form2.html"><img src="modif.jpg" id="img2" /></a>
-    <a href="form.html"><img src="modif.jpg" id="img3" /></a>
-
     
+     <a href="messages.html">Retour</a>
+       
+    </div>
+    </form>
+   
 </body>
 
 </html>       
