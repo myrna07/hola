@@ -5,16 +5,40 @@ body
     
 }
 
+
+#img0
+{left:30px;
+height:70px;
+width:120px;
+top:5px;
+}
+
+
+
+h1
+{
+    
+color:#00518E;
+}
 .header1 
 {
     position : fixed;
     width: 100%;
-    height : 60px;
-    background : darkred;
+    height : 80px;
+    background : #00518E;
     top :0 ;
     left : 0;
-    color : darkred;
+    color : #00518E;
     z-index : 7;
+}
+
+.menu{
+position:absolute;
+top:100px;
+width:100%;
+height:6045px;
+background-color:gainsboro;
+
 }
 
 
@@ -88,6 +112,8 @@ body
 }
 
 
+
+
 #Emplois{
     top: 10px;
    left : 800px;
@@ -105,23 +131,15 @@ body
       width:100px;
   
 }
-.menu{
-position:absolute;
-top:100px;
-width:100%;
-height:6045px;
-background-color:gainsboro;
 
-}
 
 
 #img1{
-     
-   
+    
     height : 40px;
     position: relative;
    left: 1305px;
-   top: 1px;
+   top: -25px;
 
     
     
@@ -173,7 +191,7 @@ width:80px;}
     width:200px;
 height:100px;
 border-radius:4px/4px;
-background:darkred;
+background:#00518E;
 font-size:15px;
 outline:none;
 color:white;

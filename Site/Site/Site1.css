@@ -19,7 +19,7 @@ font-family:verdana;
 position:fixed;
 width:100%;
 height:100px;
-background:darkred;
+background:#00518E;
 top:0;
 left:0;
 color:white;
@@ -28,11 +28,17 @@ font-family:verdana;
 
 }
 
+a
+{
+font-size:10px;
+text-decoration: underline;
+}
 
-#img1{left:100px;
-height:50px;
-width:110px;
-top:25px;
+
+#img1{left:50px;
+height:110px;
+width:210px;
+top:-10px;
 }
 
 #loginbox{width:100px;
@@ -59,6 +65,7 @@ color:#142170;
 width:50px;
 height:22px;
 cursor:pointer;}
+
 #submit1{left:1100px;
 top:39px;
 height:25px;
@@ -102,7 +109,8 @@ color:white;
     text-align : center;
 width:470px;
 height:495px;
-     background-color: darkred;
+     background-color: #00518E;
+  
 }
 
 #box{width:300px;
@@ -136,12 +144,26 @@ height:80px;
 background:white;
 }
 
-#conclu1{width:930px;
+#conclu1{
+    width:930px;
 top:15px;
 left:200px;
-color:#bcbdc4;
-height:60px;}
+height:60px;
+ font-size: .60em;
+          font-style: italic;
+        text-align: center;
+}
+
+#footer { 
+    font-size: .60em;
+          font-style: italic;
+        text-align: center;
+    
+        
+}
 .header1{
+    
+
 position:fixed;
 width:100%;
 height:60px;
