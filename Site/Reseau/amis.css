@@ -2,6 +2,7 @@ body
 {
     background: linear-gradient (to bottom right, white, black);
     height : 4000px;
+    
 }
 
 .header1 
@@ -114,133 +115,51 @@ body
     
     
 }
-#submit1{
-top : 10px;
-left : 1300px;
-height:40px;
-color : white;
-background: darkred;
-font-size : 20px;
-width:100px;
-}
 
-.couv{
-left : 600px;
-top: 60px;
-height : 360px;
-width: 850px;
-position : absolute;
--webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
-}
 
-.droite{
-left : 600px;
-top: 60px;
-height : 360px;
-width: 850px;
-position : absolute;
-display: none;
-}
-
-.header2{
-left : 0px;
-top: 0px;
-background: red;
-height : 60px;
-width: 100%;
-position : fixed;
-z-index : 6;
--webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
-}
-
-.profil{
-     width: 140px;
-    top : 430px;
-    height : 140px;
-    left : 960px;
-    padding : 5px;
-    position: absolute;
-    border-radius: 2px/2px;
-   background :white;
-}
-
-.profilpic{
-    width: 140px;
-    top : 430px;
-    height : 140px;
-    left : 960px;
-    padding : 5px;
-    position: absolute;
-    border-radius: 2px/2px;
-     -webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
-}
-#pdp{
-    width: 140px;
-    top : 430px;
-    height : 140px;
-    left : 960px;
-    padding : 5px;
-    position: absolute;
-    border-radius: 2px/2px;
-     -webkit-box-shadow : 0 3px 8px rgba(0, 0, 0, .25);
-}
 
 .bodyx{
 position:absolute;
-left:600;
-top:600px;
-width:40%;
-height:4000px;
+left:0;
+top:100px;
+width:100%;
+height:10005px;
 background-color:gainsboro;
 
 }
 
-#img2{
-   
-height : 40px;
-position: relative;
-left: 1380px;
-top: 615px;
 
-
-}
-#img3{
-   
-height : 40px;
-position: relative;
-left: 1100px;
-top: 425px;
-
+#form3{top:40px;
+left:400px;
+font-family:verdana;
+font-size:20px;
+color:white;
+    text-align : center;
+width:900px;
+height:900px;
+background-color: darkred;
 }
 
-#img4{
-   
-height : 90px;
-position: relative;
-left: 600px;
-top:4900px;
 
-}
-.form3{
-top:50px;
+
+#searchbar{position:relative; width:1000px; height:auto;}
+
+
+#form3{top:100px;
 left:400px;
 font-family:verdana;
 font-size:30px;
 color:white;
-text-align : center;
-width:40%;
-height:3500px;
- background-color: darkred;
-    
+    text-align : center;
+width:470px;
+height:495px;
+     background-color: darkred;
 }
 
-
-#box{
-width:700px;
-height:3700px;
+#box{width:300px;
+height:40px;
 background:white;
-
+padding:10px;
 font-size:12px;
- 
 }
 

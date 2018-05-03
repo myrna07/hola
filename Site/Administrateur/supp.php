@@ -3,7 +3,7 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','root');
+define ('DB_PASS','');
 $base  = 'linkedin'; 
 
 //Récupération des id 
@@ -26,17 +26,15 @@ $mdp=isset($_POST["password"])?$_POST["password"]:"";
 
   if ($db_found) {
 	
-	$sql = "INSERT INTO utilisateur (pays, statut) VALUES ('$pays','$domaine')"; 
-	$result = mysqli_query($db_handle, $sql);
 	
 		
-	$sql2 = "INSERT INTO personne (Nom, Prenom, Mail, Pseudo, Mdp, Naissance) VALUES ('$nom','$prenom','$mail','$identifiant','$mdp','$naissance')"; 
+	$sql2 = 'DELETE from personne WHERE Nom='$nom'AND Prenom='$prenom' AND Pseudo=$identifiant'; 
 	$result2 = mysqli_query($db_handle, $sql2);
 	
 	   // on insère les informations du formulaire dans la table 
 
     // on affiche le résultat pour le visiteur 
-    header("Location:/hola/Site/Accueil/accueil.html");
+    header("Location: accueil.html");
 
   }
 else { 

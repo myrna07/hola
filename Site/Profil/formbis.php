@@ -8,10 +8,10 @@ $base  = 'linkedin';
 
 
 
-//Récupération des id 
 
-$description=isset($_POST["description"])?$_POST["description"]:"";
 
+//$description=isset($_POST["description"])?$_POST["description"]:"";
+$hola=$_FILES['video']['name'];
 
 
   // CONNEXION

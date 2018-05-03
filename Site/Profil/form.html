@@ -3,9 +3,9 @@
 Node in 
 </title>
 <head>
-<link type="text/css" rel="stylesheet" href="profil.css" />
     </head>
-<body >
+<link type="text/css" rel="stylesheet" href="profil.css" />
+    <body >
 
  <div class = "header1" > 
      <ul>
@@ -21,20 +21,33 @@ Node in
    </ul>
     
    </div>
+        
+
+        
     <div class = "header2"></div>
     <div class = "droite"></div>
     <div class = "couv"><img src ="loli.png" width ="850px"/></div>
-    <div class = "profil"></div>
-    <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
+    
+      <div class = "profil"></div>
+     <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
     
     <div class="bodyx"></div>
-    <a href="form2.html"><img src="modif.jpg" id="img2" /></a>
-    <a href="form.html"><img src="modif.jpg" id="img3" /></a>
+    <a href="form.php"><img src="modif.jpg" id="img2" /></a>
+    <a href="form2.php"><img src="modif.jpg" id="img3" /></a>
+ 
+        <form method="post" action="formbis.php" enctype="multipart/form-data">
+        <label for="pdc">Photo de couverture :</label><br />
+        <input type="file" name="pdc" id="pdc" /><br />
+        <label for="pdp">Photo de profil :</label><br />
+        <input type="file" name="pdp" id="pdp" /><br />
 
-    
+</form>
 </body>
 
-</html>       
+    
+</html>
+
+
+
+
  
-    
-    

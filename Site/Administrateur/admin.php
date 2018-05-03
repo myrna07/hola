@@ -36,7 +36,7 @@ $mdp=isset($_POST["password"])?$_POST["password"]:"";
 	   // on insère les informations du formulaire dans la table 
 
     // on affiche le résultat pour le visiteur 
-    header("Location:/hola/Site/Accueil/accueil.html");
+    header("Location: accueil.html");
 
   }
 else { 

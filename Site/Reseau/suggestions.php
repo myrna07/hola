@@ -3,35 +3,36 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','');
+define ('DB_PASS','root');
 $base  = 'linkedin'; 
-
-
-
-//Récupération des id 
-
-$description=isset($_POST["description"])?$_POST["description"]:"";
-
-
 
   // CONNEXION
  $db_handle = mysqli_connect(DB_SERVER,DB_USER,DB_PASS) or die(error); //Connexion
  
  $db_found = mysqli_select_db($db_handle, $base)or die(error2);
 
-  if ($db_found) {
+
+$nom=isset($_POST["amis"])?$_POST["amis"]:"";
+
+if ($db_found) {
 	
-	$sql = "UPDATE utilisateur SET description = '$description' WHERE numero='2'"; 
+	$sql = "SELECT nom, prenom FROM personne WHERE nom='$nom'"; 
 	$result = mysqli_query($db_handle, $sql);
 	
 	
+while ($data = mysqli_fetch_assoc($result)){
+	
 
-    // on affiche le résultat pour le visiteur 
-    header("Location: ok.html");
+		echo "Nom: ".$data['nom'].'<br>'; 
+		echo "Prenom: ".$data['prenom'].'<br> ';
+ 
 
   }
+}
 else { 
 	echo "Database not found"; 
 }   
-  
-?>
+
+?>			   
+        
+	

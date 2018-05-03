@@ -20,7 +20,7 @@ $base  = 'linkedin';
 <head>
   <title> Accueil </title>
   <meta charset="utf-8">
- <link rel="stylesheet" href="reseau.css">
+ <link rel="stylesheet" href="amis.css">
  
     </head>
 <body>
@@ -38,7 +38,7 @@ $base  = 'linkedin';
 
    </ul>
     
-     
+      </div>
       
           
           <div class="bodyx">
@@ -48,34 +48,32 @@ $base  = 'linkedin';
 
 <div id="form3" class="bodyx">
     
-    
-<div id="searchbar">
-    
-                <form action="" class="form3">
-               <input class="champ" type="text" value="Rechercher..."/>
-                    <input class="bouton" type="button" value=" " />
+
                      
-                </form>
-                </div>
+                
      <?php
 
   if ($db_found) {
 	
-	$sql = "SELECT nom * FROM personne";
+	
+	$sql = "SELECT nom,prenom FROM personne";
 	$result = mysqli_query($db_handle, $sql);
 	
 	while ($data = mysqli_fetch_assoc($result)){
-		echo "Utilisateur: ".$data['ami'].'<br>'; 
-		}
-
-    
-
+		echo "Nom: ".$data['nom'].'<br>'; 
+		echo "Prenom: ".$data['prenom'].'<br>';
+	
+	}
   }
 else { 
 	echo "Database not found"; 
 }   
      
-          ?> </div>  </div>    
+          ?> 
+		  
+		  </form>
+               
+		  </div>  </div>    
      
      
    </div>
