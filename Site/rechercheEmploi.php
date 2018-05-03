@@ -3,7 +3,7 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','');
+define ('DB_PASS','root');
 $base  = 'linkedin'; 
 
   // CONNEXION
@@ -70,33 +70,26 @@ $base  = 'linkedin';
 		echo "Lieu: ".$data['pays'].'<br>';
 		
 		?>
-<<<<<<< HEAD
+
         <form method="post" action="sql_editer.php" enctype="multipart/form-data">
    <input type="file" name="pdp" id="texte" /><br />
      <br /> 
         </form>
         
-          <script>
-     function change()
-            {
-    var color = document.getElementById('couleur');
-    var color.style.backgroundColor="green";
-    }
-        </script>
-
-		 <input type="submit" id="button3" value="Postuler" onclick="change()"/> 
+        
+<input type="submit" value="" id="button3"/>
+		 <input type="submit" id="button3" value="Postuler" /> 
         
       
 		
         
         <?php
 		echo "______________________________________________________________________________".'<br>';
-=======
 		 <input type="submit" id="button3" value="Postuler"/> 
 		 
 		 <?php
 		echo "_______________________________________________________".'<br>';
->>>>>>> cff2a1b6b88180bb84c2175e0bd8f24c236c9eb6
+
 	}
 
     
