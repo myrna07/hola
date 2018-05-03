@@ -79,7 +79,7 @@ while ($data = mysqli_fetch_assoc($result)){
  $sql2 = "INSERT INTO amis (utilisateur, ami) VALUES ('$personne', '$ami')";
  $result = mysqli_query($db_handle, $sql2);
  
- header("Location: suggestion.html");
+ 
  
  ?>
 

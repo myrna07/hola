@@ -3,7 +3,7 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','root');
+define ('DB_PASS','');
 $base  = 'linkedin'; 
 
 //Récupération des id 
@@ -18,12 +18,12 @@ $password=isset($_POST["password"])?$_POST["password"]:"";
 
      
   // VERIFICATION QUE LE PSEUDO ET MDP EXISTENT 
-$sql  = "SELECT * FROM personne WHERE mail = '".$name."' AND mdp = '".$password."'";
+$sql  = "SELECT * FROM personne WHERE pseudo = '".$name."' AND mdp = '".$password."'";
     $res  = mysqli_query($db_handle, $sql); //execution de la requete
     
     //ON TEST SI LES CHAMPS EXISTENT      
   if(mysqli_num_rows($res) != 0) {
-	header("accueil.html");
+	header("Location: accueil.html");
 } else {
 	echo "Le pseudo ou le mot de passe est incorrect.";
 }

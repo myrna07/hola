@@ -3,7 +3,7 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','root');
+define ('DB_PASS','');
 $base  = 'linkedin'; 
 
   // CONNEXION
@@ -60,7 +60,7 @@ $base  = 'linkedin';
 		echo "Description: ".$data['description'].'<br>';
 		
 		?>
-<<<<<<< HEAD:Site/rechercheEmploi.php
+
 
         <form method="post" action="sql_editer.php" enctype="multipart/form-data">
    <input type="file" name="pdp" id="texte" /><br />
@@ -71,26 +71,19 @@ $base  = 'linkedin';
 <input type="submit" value="" id="button3"/>
 		 <input type="submit" id="button3" value="Postuler" /> 
         
-      
-=======
->>>>>>> e350d1d2e9ea3f8ebef5f4dafcd49e98884b65cd:Site/Emploi/rechercheEmploi.php
+
 		
 		
 		<img src="postuler1.jpg" onclick="this.src='postuler2.jpg'">
 		
 
 
-		<?php 
 		
-		echo "______________________________________________________________________________".'<br>';
-<<<<<<< HEAD:Site/rechercheEmploi.php
-		 <input type="submit" id="button3" value="Postuler"/> 
 		 
 		 <?php
 		echo "_______________________________________________________".'<br>';
 
-=======
->>>>>>> e350d1d2e9ea3f8ebef5f4dafcd49e98884b65cd:Site/Emploi/rechercheEmploi.php
+
 	}
 
     		
