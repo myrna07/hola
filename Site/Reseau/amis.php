@@ -3,7 +3,7 @@
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
-define ('DB_PASS','root');
+define ('DB_PASS','');
 $base  = 'linkedin'; 
 
   // CONNEXION
@@ -71,12 +71,11 @@ else {
      
           ?> 
 		  
-		  </form>
-               
+		
 		  </div>  </div>    
      
      
-   </div>
+ 
     
     
 </body>
