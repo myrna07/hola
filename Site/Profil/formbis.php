@@ -19,7 +19,7 @@ $base  = 'linkedin2';
   if ($db_found) {
 	
 //	$sql = "UPDATE utilisateur SET photo = '$hola' WHERE numero='2'"; 
-      $sql = "UPDATE utilisateur SET description = '2' WHERE numero='1'"; 
+      $sql = "UPDATE utilisateur SET description = '2' WHERE numero='01'"; 
 	$result = mysqli_query($db_handle, $sql);
 	
 	
