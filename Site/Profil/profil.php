@@ -29,7 +29,9 @@ Node in
     <div class = "couv"><img src ="loli.png" width ="850px"/></div>
     <div class = "profil"></div>
     <div class = "profilpic"><img src ="profil.png" height ="140px"/></div>
-    <div class="bodyx" ><?php
+    <div class="bodyx" >
+
+<?php
 
 //VARIABLES DE CONNEXION 
 define ('DB_SERVER','localhost');
@@ -59,16 +61,15 @@ while (	$donn=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
        echo  'Competences : ' .$donn['competences'].'<br />';
         echo  'Description : ' .$donn['description'].'<br />';
      
-    
+   /* <form method="post" action="formbis.php" enctype="multipart/form-data">
+        <label for="pdc">Photo de couverture :</label><br />
+        <input type="file" name="pdc" id="pdc" /><br />
+        <label for="pdp">Photo de profil :</label><br />
+        <input type="file" name="pdp" id="pdp" /><br />
+</form>*/
 }
       
- /*     
-      echo '
-        <div class ="jpp" text = center>
-        $donn["pays"]     ; 
-      '*/
-    // on affiche le résultat pour le visiteur 
-//header("Location: ok.html");
+ 
 
   }
 else { 
