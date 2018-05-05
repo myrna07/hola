@@ -1,0 +1,402 @@
+body{ 
+background: linear-gradient(to bottom right, white, #bcbdc4);
+height:450px;
+width:300px;}
+
+.headerx{
+position:fixed;
+width:100%;
+height:100px;
+top:0;
+left:0;
+color:white;
+z-index:7;
+font-family:verdana;
+-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+
+}
+
+
+
+
+.header{
+position:fixed;
+width:100%;
+height:100px;
+background:#00737B;
+top:0;
+left:0;
+color:white;
+z-index:7;
+font-family:verdana;
+font-size:13px;
+
+}
+#form4{top:100px;
+left:400px;
+font-family:verdana;
+font-size:30px;
+color:white;
+    text-align : center;
+width:470px;
+height:305px;
+     background-color: #00737B;
+  
+}
+
+
+li {
+margin-bottom:15px;
+    list-style: none;
+}
+.trop{
+
+width:100%;
+height:100px;
+top:0;
+left:0;
+color:grey;
+z-index:7;
+font-family:verdana;
+font-size:17px;
+
+}
+
+.trop ul li  {
+	display: inline;
+    list-style:none;
+       
+}
+
+#button4{width:300px;
+height:30px;
+background:grey;
+color:white;
+font-size:20px;
+margin:auto;}
+a
+{
+font-size:10px;
+text-decoration: underline;
+}
+
+
+#img1{left:30px;
+height:110px;
+width:210px;
+top:-10px;
+}
+
+#imgdeco{left:1350px;
+height:50px;
+width:50px;
+top:20px;
+}
+
+
+#button1{background:white;
+
+width:50px;
+height:22px;
+cursor:pointer;}
+
+#submit1{left:1100px;
+top:39px;
+height:25px;
+width:50px;
+}
+
+.bodyx{
+position:absolute;
+left:0;
+top:100px;
+width:100%;
+height:600;
+background-color:gainsboro;
+
+}
+
+
+#img2{top:150px;
+left:0px;
+height:200px;
+width:200px;}
+
+#intro3{top:100px;
+left:700px;
+font-family:verdana;
+font-size:20px;
+color:darkred;
+height:50px;
+width:300px;
+margin:auto;}
+
+#formG{
+    left:0px;
+    top :50px;
+    color:black;
+    text-align: center;
+    width:230px;
+
+    
+    font-family:verdana;
+font-size:20px; 
+
+    
+}
+
+#formD{
+    left:1180px;
+    top :50px;
+    color:black;
+    text-align: center;
+    width:230px;
+  
+    font-family:verdana;
+font-size:20px; 
+
+    
+}
+
+
+
+#form3{top:100px;
+left:400px;
+font-family:verdana;
+font-size:20px;
+color:white;
+    text-align : center;
+width:470px;
+height:455px;
+     background-color: #00737B;
+}
+
+#form4{top:100px;
+left:400px;
+font-family:verdana;
+font-size:20px;
+color:white;
+    text-align : center;
+width:470px;
+height:280px;
+     background-color: #00737B;
+  
+}
+
+#box{width:300px;
+height:30px;
+background:white;
+padding:10px;
+font-size:12px;
+}
+
+#box1{width:150px;
+height:30px;
+background:white;
+padding:10px;
+font-size:12px;
+}
+
+#button2{width:200px;
+height:40px;
+background:grey;
+color:white;
+font-size:20px;
+margin:auto;}
+
+#button3{width:120px;
+height:30px;
+background:grey;
+color:white;
+font-size:20px;
+left:-10px;}
+
+
+.body1{
+position:absolute;
+left:0;
+top:105%;
+width:100%;
+height:80px;
+background:white;
+}
+
+#conclu1{
+    width:930px;
+top:15px;
+left:200px;
+height:60px;
+ font-size: .60em;
+          font-style: italic;
+        text-align: center;
+}
+
+#footer { 
+    font-size: .60em;
+          font-style: italic;
+        text-align: center;
+    
+        
+}
+
+.header ul li  {
+	display: inline;
+       
+}
+.header ul li a {
+	background-color: darkgrey;
+	text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    line-height:35px; 
+	padding: 1px 15px;
+}
+
+.header ul {
+	display: center;
+    margin : 300px;
+
+}
+
+.header li a:hover {
+	background-color: grey;
+	text-decoration: none;
+    font-weight: bold;
+	color: grey;
+    line-height:35px; 
+	padding: 1px 15px;
+    
+}
+
+
+
+#Accueil{
+    top : 20px;
+    width:100px;
+   left : 280px;
+    height : 40px;
+    color : white;
+
+    
+}
+#Reseau{
+    top : 20px;
+    width:100px;
+   left :430px;
+    height : 40px;
+    color : white;
+
+    
+}
+#Notifications{
+    top : 20px;
+   left : 580px;
+    height : 40px;
+    color : white;
+    width:100px;
+
+    
+}
+
+#Messages{
+    top : 20px;
+   left : 730px;
+    height : 40px;
+   color : white;
+        width:100px;
+
+}
+
+
+
+
+#Emplois{
+    top: 20px;
+   left : 880px;
+    height : 40px;
+   color : white;
+       width:100px;
+ 
+}
+#Moi{
+    
+    top : 20px;
+   left : 1030px;
+    height : 40px;
+   color : white;
+      width:100px;
+  
+}
+
+
+
+#Admin{
+    
+    top : 20px;
+   left : 1180px;
+    height : 40px;
+   color : white;
+      width:100px;
+  
+}
+
+#imgp1{
+    height : 270px;
+    width:200px;
+    position: relative;
+   left: 10px;
+    top:0px;
+   
+
+    
+}
+#imgp2{
+    height : 270px;
+    width:200px;
+    position: relative;
+left: 10px;
+    top:0px
+    
+}
+#imgp3{
+    height : 270px;
+    width:200px;
+    position: relative;
+   left: 10px;
+   
+    
+}
+
+#imgp4{
+    height : 270px;
+    width:200px;
+    position: relative;
+   left: 10px;
+
+    
+}
+
+#imgp5{
+    height : 270px;
+    width:200px;
+    position: relative;
+   left: 10px;
+ 
+    
+}
+
+
+
+#description{width:700px;
+height:100px;
+background:white;
+padding:10px;
+font-size:12px;
+}
+
+
+
+
+
+
