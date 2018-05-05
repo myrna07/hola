@@ -1,3 +1,14 @@
+	<?php
+
+//VARIABLES DE CONNEXION 
+define ('DB_SERVER','localhost');
+define ('DB_USER','root');
+define ('DB_PASS','');
+$base  = 'linkedin4'; 
+$name=$_GET['name'];
+$password=$_GET['password'];
+?>
+
 <html>
 <title>
 Node in 
@@ -15,12 +26,13 @@ Node in
 
  <div class = "header1" > 
      <ul>
-     <li><a href="#" id="Accueil" class="header1">Accueil</a></li>
-	  <li><a href="#" id="Reseau" class="header1">Reseau</a></li>
-	  <li><a href="#"id="Notifications" class="header1">Notifications</a></li>
-	  <li><a href="#"id="Emplois" class="header1">Emplois</a></li>
-      <li><a href="#"id="Messages" class="header1">Messages</a></li>
-      <li><a href="#"id="Moi" class="header1">Moi</a></li>  
+     <li><a  id="Accueil" class="header" href=<?php echo "accueil.php?name=".$name."&password=".$password; ?>>Accueil</a></li>
+	  <li><a id="Reseau" class="header" href=<?php echo "suggestion1.php?name=".$name."&password=".$password; ?>>Reseau</a></li>
+	  <li><a id="Notifications" class="header" href=<?php echo "accueil.php?name=".$name."&password=".$password; ?>>Notifications</a></li>
+	  <li><a id="Emplois" class="header" href=<?php echo "deposerEmploi.php?name=".$name."&password=".$password; ?>>Emplois</a></li>
+      <li><a id="Messages" class="header" href= <?php echo "messages.php?name=".$name."&password=".$password; ?>>Messages</a></li>
+      <li><a id="Moi" class="header" href=<?php echo "profil.php?name=".$name."&password=".$password; ?>>Moi</a></li> 
+    <li><a id="Admin" class="header" href=<?php echo "admin3.php?name=".$name."&password=".$password; ?>>Admin</a></li>
     <a href="Site.html"><img src="deco.png" id="img1" /></a>
    </ul>
    </div>
@@ -30,12 +42,6 @@ Node in
         
 <?php
 //VARIABLES DE CONNEXION 
-define ('DB_SERVER','localhost');
-define ('DB_USER','root');
-define ('DB_PASS','');
-$base  = 'linkedin4'; 
-
-
 
 
   // CONNEXION
@@ -72,7 +78,7 @@ else {
   
 ?>
     
-     <a href="messages.html">Retour</a>
+     <a href=<?php echo "messages.php?name=".$name."&password=".$password; ?>>Retour</a>
        
     </div>
     </form>

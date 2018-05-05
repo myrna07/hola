@@ -6,7 +6,8 @@ define ('DB_USER','root');
 define ('DB_PASS','');
 $base  = 'linkedin2'; 
 
-
+$name=$_GET['name'];
+$password=$_GET['password'];
 //$description=isset($_POST["description"])?$_POST["description"]:"";
 if (isset ($_POST['enregistrer']))
 {
@@ -33,7 +34,7 @@ if (isset ($_POST['enregistrer']))
  
   if(move_uploaded_file($_FILES['files']['tmp_name'], $upload_directory.$TargetPath)){  
 
-  $sql="UPDATE utilisateur SET photo='$TargetPath' WHERE numero ='1'"; 
+  $sql="UPDATE utilisateur SET photo='$TargetPath' WHERE numero ='$personne'"; 
 
            $result = mysqli_query($db_handle, $sql);
  
@@ -50,5 +51,5 @@ if (isset ($_POST['enregistrer']))
 else { 
 	echo "Database not found"; 
 }   
-  */
+  
 ?>

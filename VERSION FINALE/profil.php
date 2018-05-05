@@ -1,3 +1,15 @@
+<?php
+
+//VARIABLES DE CONNEXION 
+define ('DB_SERVER','localhost');
+define ('DB_USER','root');
+define ('DB_PASS','');
+$base  = 'linkedin2'; 
+
+$name=$_GET['name'];
+$password=$_GET['password'];
+?>
+
 <html>
 <title>
 Node in 
@@ -6,7 +18,7 @@ Node in
     <link type="text/css" rel="stylesheet" href="profil.css" />
     
 
-    
+   
     </head>
 <body >
     <div>    <label type="text" ></label></div>
@@ -19,9 +31,9 @@ Node in
 	  <li><a id="Reseau" class="header" href=<?php echo "suggestion1.php?name=".$name."&password=".$password; ?>>Reseau</a></li>
 	  <li><a id="Notifications" class="header" href=<?php echo "accueil.php?name=".$name."&password=".$password; ?>>Notifications</a></li>
 	  <li><a id="Emplois" class="header" href=<?php echo "deposerEmploi.php?name=".$name."&password=".$password; ?>>Emplois</a></li>
-      <li><a id="Messages" class="header"  href=<?php echo "messages.php?name=".$name."&password=".$password; ?>>Messages</a></li>
+      <li><a id="Messages" class="header" href= <?php echo "messages.php?name=".$name."&password=".$password; ?>>Messages</a></li>
       <li><a id="Moi" class="header" href=<?php echo "profil.php?name=".$name."&password=".$password; ?>>Moi</a></li> 
-    <li><a id="Admin" class="header" href=<?php echo "admin.php?name=".$name."&password=".$password; ?>>Admin</a></li>
+    <li><a id="Admin" class="header" href=<?php echo "admin3.php?name=".$name."&password=".$password; ?>>Admin</a></li>
     <a href="Site.html"><img src="deco.png" id="img1" /></a>
    </ul>
    </div>
@@ -35,15 +47,11 @@ Node in
 <?php
 
 //VARIABLES DE CONNEXION 
-define ('DB_SERVER','localhost');
-define ('DB_USER','root');
-define ('DB_PASS','');
-$base  = 'linkedin2'; 
 
 $name=$_GET['name'];
 $password=$_GET['password'];
 
-// CONNEXION
+  // CONNEXION
  $db_handle = mysqli_connect(DB_SERVER,DB_USER,DB_PASS) or die(error); //Connexion
  
  $db_found = mysqli_select_db($db_handle, $base)or die(error2);
@@ -55,7 +63,7 @@ $password=$_GET['password'];
 	$data1 = mysqli_fetch_assoc($result1);
 	$personne=$data1['numero'];
 	 
-  
+
 //echo '<img src=" MyImages/loli.png " />' ;
   if ($db_found) {
 	
@@ -70,7 +78,7 @@ echo 'Education : '.$donn['education'].'<br />';
     echo  'Langues : ' .$donn['langue'].'<br />';
        echo  'Competences : ' .$donn['competences'].'<br />';
         echo  'Description : ' .$donn['description'].'<br />'; 
-   //  echo '<img src=" localhost : MyImages/loli.png " />' ;
+    // echo '<img src=" localhost : MyImages/loli.png " />' ;
 //echo $photo=$donn['photo'];
 //echo '<img src="localhost : C:/wamp64/www/GitHub/hola/Site/MyImages/loli.png />' ;
 //'';base64,'.base64_encode($photo ) .'" />';
@@ -85,10 +93,13 @@ else {
 }   
   
 ?>
-    </div>
   
-    <a href="form2.html"><img src="modif.jpg" id="img2" /></a>
-    <a href="form.html"><img src="modif.jpg" id="img3" /></a>
+         </div>
+        <a href=<?php echo "form2.php?name=".$name."&password=".$password; ?>><img src="modif.jpg" id="img2" /></a>
+    <a href=<?php echo "form.php?name=".$name."&password=".$password; ?>><img src="modif.jpg" id="img3" /></a>
+   
+  
+   
 
     
 </body>

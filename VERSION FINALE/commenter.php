@@ -4,16 +4,11 @@
 define ('DB_SERVER','localhost');
 define ('DB_USER','root');
 define ('DB_PASS','');
-$base  = 'linkedin4'; 
-
-
+$base  = 'linkedin'; 
 
 //Récupération des id 
 
-$user1=isset($_POST["user1"])?$_POST["user1"]:"";
-$user2=isset($_POST["user2"])?$_POST["user2"]:"";
-//$datheure=isset($_POST["datheure"])?$_POST["datheure"]:"";
-$messages=isset($_POST["messages"])?$_POST["messages"]:"";
+$commenter=isset($_POST["commenter"])?$_POST["commenter"]:"";
 
 
 
@@ -24,13 +19,10 @@ $messages=isset($_POST["messages"])?$_POST["messages"]:"";
 
   if ($db_found) {
 	
-	$sql = "INSERT INTO messages(user1,user2,sms) VALUES ('$user1','$user2','$messages')"; 
+	$sql = "UPDATE publication SET commentaire='$commenter' WHERE utilisateur=2"; 
 	$result = mysqli_query($db_handle, $sql);
-	
-	
 
-    // on affiche le résultat pour le visiteur 
-    header("Location: conversation.php");
+    header("Location: accueil.php");
 
   }
 else { 

@@ -32,7 +32,7 @@ Node in
   
    
     <div class="bodyx"></div>
-  <form action = "formbis.php" method="POST" enctype="multipart/form-data">
+  <form action = "" method="POST" enctype="multipart/form-data">
               
         <label for="pdp">Photo de profil :</label><br />
         <input type="file" name='pdp' id="pdp" /><br />

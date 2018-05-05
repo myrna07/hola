@@ -1,0 +1,141 @@
+	<?php
+
+//VARIABLES DE CONNEXION 
+define ('DB_SERVER','localhost');
+define ('DB_USER','root');
+define ('DB_PASS','');
+$base  = 'linkedin'; 
+$name=$_GET['name'];
+$password=$_GET['password'];
+?>
+
+<!DOCTYPE>
+<html>
+<title>NodeIn</title>
+<head>
+<link type="text/css" rel="stylesheet" href="admin.css" />
+
+</head>
+<body style="height:600px">
+
+
+
+<div class="header">
+<div id="img1" class="header" >
+    <a href="acceuil.php"><img src="loloentier.png" id="img1" /></a></div>
+
+    <div id="imgdeco" class="header" >
+    <a href="site.html"><img src="deco.png" id="imgdeco" /></a></div>
+    <ul class="niveau1">
+    <li><a  id="Accueil" class="header" href=<?php echo "accueil.php?name=".$name."&password=".$password; ?>>Accueil</a></li>
+	  <li><a id="Reseau" class="header" href=<?php echo "suggestion1.php?name=".$name."&password=".$password; ?>>Reseau</a></li>
+	  <li><a id="Notifications" class="header" href=<?php echo "accueil.php?name=".$name."&password=".$password; ?>>Notifications</a></li>
+	  <li><a id="Emplois" class="header" href=<?php echo "deposerEmploi.php?name=".$name."&password=".$password; ?>>Emplois</a></li>
+      <li><a id="Messages" class="header" href= <?php echo "messages.php?name=".$name."&password=".$password; ?>>Messages</a></li>
+      <li><a id="Moi" class="header" href=<?php echo "profil.php?name=".$name."&password=".$password; ?>>Moi</a></li> 
+    <li><a id="Admin" class="header" href=<?php echo "admin3.php?name=".$name."&password=".$password; ?>>Admin</a></li>
+         
+   
+
+   </ul>
+    
+     </div>
+    
+
+
+
+   
+
+<div class="bodyx">
+    
+    
+
+    
+    
+
+<form method="post" action="admin.php" >
+<div id="form3" class="bodyx">
+    <table>
+        <br>
+        <label>AJOUTER UN UTILISATEUR</label>
+        <tr> <td> <p>  </p>  </td>      </tr>
+        <tr> <td> <p>  </p>  </td>      </tr>
+    <tr><td><label>Nom </label></td>
+             <td><input type="text" id="box" name="nom"></td></tr>
+      
+         <tr><td><label>Prenom </label></td>
+             <td><input type="text" id="box" name="prenom"></td></tr>
+      
+        <tr><td><label>Sexe</label></td>
+        <td><input type="radio" name="Genre" value="Homme" id="boxa"> Homme
+     
+        <input type="radio" name="Genre" value="Femme" id="boxa"> Femme</td></tr>
+     
+     
+            <tr><td><label>Date de naissance</label></td>
+             <td><input type="date" id="box" name="naissance"></td></tr>
+        
+            <tr><td><label>Mail </label></td>
+             <td><input type="text" id="box" name="mail"></td></tr>
+        
+        <tr><td><label>Identifiant</label></td>
+             <td><input type="text" id="box" name="identifiant"></td></tr>
+    
+	  <tr><td><label>Mot de passe</label></td>
+        <td><input type="password" id="box" name="password"/></td></tr>
+    
+      
+            <tr><td><label>Pays</label></td>
+             <td><input type="text" id="box" name="pays"></td></tr>
+			 
+              
+     <tr><td><label>Domaine</label></td>
+       <td> <select name="domaine" id="box"  >
+           <option value = "Selectionner votre domaine">Selectionner votre domaine</option>
+            <option value = "Ingenieur">Ingenieur</option>
+           <option value = "Journaliste">Journaliste</option>
+           <option value = "Medecin">Medecin</option>
+		    <option value = "Commercial">Commercial</option>
+			 <option value = "Artisan">Artisan</option>
+           <option value = "Autre">Autre</option>
+           </select></td></tr>
+     
+        <tr> <td> <p>  </p>  </td>      </tr>
+        <tr><td></td><td> <input type="submit" id="button3" value="Ajouter"/> </td></tr>
+            <td><p>     </p></td>
+    </table>
+    
+    
+      
+             
+     </div>
+    
+</form>
+<br><hr>
+
+<div id="formG" class="bodyx">
+    <h1> ADMIN</h1>
+   
+
+    <div class="trop" > 
+        
+    <li><a href="admin.html" class="trop">AJOUTER UTILSATEUR</a></li>
+    <li><a href="suppbis.html"class="trop">SUPPRIMER UTILISATEUR</a></li>
+  </div>
+        
+    
+</div> 
+
+    
+     
+    
+     
+     <div class="body1">
+<div id="conclu1" class="body1">Copyright by NODEIN TEAM / Audrey Bacquart / Mathilde Hoche / Myrna El Awady <br><hr>Version 1.0 / Mai 2018</div></div>
+
+        </div> 	
+		
+		
+		
+</body>
+</html>
